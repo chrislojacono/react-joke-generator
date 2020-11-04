@@ -3,12 +3,10 @@ import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import App from './App/index';
 import reportWebVitals from './reportWebVitals';
-import JokeSection from './components/jokeSection';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <JokeSection />
   </React.StrictMode>,
   document.getElementById('root'),
 );

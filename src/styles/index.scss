@@ -6,3 +6,22 @@
 body {
   background-color:#4F4F4F;
 }
+.card{
+  width: 70%;
+  margin: 50px;
+}
+#punchlineArea{
+  margin: 20px;
+  color: red;
+}
+.card-text{
+  font-size: 25px;
+}
+.mainButton{
+  margin: 20px auto;
+}
+#root{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

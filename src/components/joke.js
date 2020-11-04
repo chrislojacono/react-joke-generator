@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class Joke extends Component {
-  punchline = () => {
-    <h4 class='m-md'>{this.props.punchline}</h4>;
-  };
-
   state = {
     punchline: [],
   };
@@ -19,18 +15,20 @@ class Joke extends Component {
     const { joke } = this.props;
 
     return (
-      <div class='card mx-auto'>
-        <div class='card-body'>
-          <p class='card-text'>{joke.setup}</p>
+      <div className='card mx-auto'>
+        <div className='card-body'>
+          <p className='card-text'>{joke.setup}</p>
           <button
             href='#'
             id='punchline'
             onClick={this.punchline}
-            class='btn btn-primary'
+            className='btn btn-primary'
           >
             Click for Punchline
           </button>
-          <div id='punchlineArea' className='punchlineArea'>{this.state.punchline}</div>
+          <div id='punchlineArea' className='punchlineArea'>
+          <h4 className="m-md">{this.state.punchline}</h4>
+          </div>
         </div>
       </div>
     );

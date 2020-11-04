@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDom from 'react-dom';
 import getJokes from '../helpers/data/getJokes';
 import Joke from './joke';
 
@@ -18,17 +17,18 @@ class JokeSection extends Component {
 
   render() {
     const { joke } = this.state;
+    const jokeSection = () => <Joke key={joke.id} joke={joke} />;
     return (
        <>
         <button
           type='button'
           id='giveMeAJoke'
-          className='btn btn-primary btn-lg'
+          className='btn btn-primary btn-lg mainButton'
           onClick={this.getAJoke}
         >
           Get a Joke
         </button>
-        <Joke key={joke.id} joke={joke}></Joke>
+        {this.state.joke.id ? (<div>{jokeSection()}</div>) : <></>};
       </>
     );
   }
