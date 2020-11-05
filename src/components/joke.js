@@ -22,7 +22,7 @@ class Joke extends Component {
             href='#'
             id='punchline'
             onClick={this.punchline}
-            className='btn btn-primary'
+            className='btn btn-outline-info'
           >
             Click for Punchline
           </button>
