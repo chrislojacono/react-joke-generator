@@ -23,12 +23,12 @@ class JokeSection extends Component {
         <button
           type='button'
           id='giveMeAJoke'
-          className='btn btn-primary btn-lg mainButton'
+          className='btn btn-lg mainButton'
           onClick={this.getAJoke}
         >
           Get a Joke
         </button>
-        {this.state.joke.id ? (<div>{jokeSection()}</div>) : <></>};
+        {this.state.joke.id ? (<div>{jokeSection()}</div>) : <></>}
       </>
     );
   }
